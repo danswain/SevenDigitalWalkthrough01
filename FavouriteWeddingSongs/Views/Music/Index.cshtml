@@ -1,0 +1,23 @@
+﻿@model dynamic
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>My Music Store</title>
+	</head>
+	<body>
+		<div>
+			@using(@Html.BeginForm("SearchResults","Music",FormMethod.Get))
+			{
+				<input type="text" name="q" value="" maxlength="20"/>
+				<input type="submit" value="Find Music"/>	   
+			}
+
+		</div>
+	</body>
+</html>

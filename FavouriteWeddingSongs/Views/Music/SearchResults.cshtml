@@ -1,0 +1,34 @@
+﻿@model SevenDigital.Api.Schema.TrackEndpoint.TrackSearch
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+</head>
+<body>
+	<div>
+		@foreach (var item in Model.Results)
+  {
+			<div>
+				
+				<img src="@item.Track.Release.Image" alt="cover art" style="float:left;"/>				
+
+				<h2>@item.Track.Title</h2>
+
+				<audio id="audioplayer" preload="metadata" controls style="width: 50%;">
+					<source src="@string.Format("http://previews.7digital.com/clips/34/{0}.clip.mp3", item.Track.Id)" type="audio/mp3">
+					Your browser doesn't support the HTML5 audio tag.
+				</audio>
+
+				<a href="@item.Track.Url" target="_blank" style="display: block;">Buy this Track on 7digital for @item.Track.Price.FormattedPrice</a>
+
+				<hr style="clear:both;" />
+			</div>
+  }
+	</div>
+</body>
+</html>
