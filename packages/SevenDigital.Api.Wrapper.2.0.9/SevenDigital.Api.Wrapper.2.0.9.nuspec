@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SevenDigital.Api.Wrapper</id>
+    <version>2.0.9</version>
+    <title>SevenDigital.Api.Wrapper</title>
+    <authors>7digital</authors>
+    <owners>7digital</owners>
+    <projectUrl>https://github.com/7digital/SevenDigital.Api.Wrapper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A .Net 7digital Music Api wrapper.</description>
+    <releaseNotes />
+    <copyright>Copyright 7digital Media Ltd. 2013</copyright>
+    <language />
+    <tags>7digital sevendigital music api</tags>
+    <references>
+      <reference file="SevenDigital.Api.Schema.dll" />
+      <reference file="SevenDigital.Api.Wrapper.dll" />
+    </references>
+  </metadata>
+</package>
